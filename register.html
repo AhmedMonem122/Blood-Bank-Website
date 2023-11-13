@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Blood Bank</title>
+    <title>Register</title>
   </head>
   <body>
     <header>
@@ -103,6 +103,75 @@
       </nav>
     </header>
 
+    <div class="container">
+      <div class="my-5 border bg-white py-3 px-2">
+        <span class="opacity-75">الرئيسية</span>
+        <span>/ إنشاء حساب جديد</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="my-5 border bg-white py-3 px-5">
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="الاسم" />
+          <input
+            type="email"
+            class="form-control mb-3"
+            placeholder="البريد الالكتروني"
+          />
+          <input
+            type="date"
+            class="form-control mb-3"
+            placeholder="تاريخ الميلاد"
+          />
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="فصيلة الدم"
+          />
+
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>المحافظة</option>
+            <option value="1">القاهرة</option>
+            <option value="2">الإسكندرية</option>
+            <option value="3">المنصورة</option>
+          </select>
+
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>المدينة</option>
+            <option value="1">القاهرة</option>
+            <option value="2">الإسكندرية</option>
+            <option value="3">المنصورة</option>
+          </select>
+
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="رقم الهاتف"
+          />
+          <input
+            type="date"
+            class="form-control mb-3"
+            placeholder="آخر تاريخ تبرع"
+          />
+          <input
+            type="password"
+            class="form-control mb-3"
+            placeholder="كلمة المرور"
+          />
+          <input
+            type="password"
+            class="form-control"
+            placeholder="تأكيد كلمة المرور"
+          />
+
+          <div class="text-center my-3">
+            <button type="submit" class="btn px-5">إنشاء</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
     <footer class="mt-5 py-3">
       <div class="container">
         <div class="row align-items-center">
@@ -182,7 +251,6 @@
         </div>
       </div>
     </div>
-
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
