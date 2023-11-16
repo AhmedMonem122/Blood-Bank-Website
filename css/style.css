@@ -249,3 +249,44 @@ form button.contact-btn:hover {
     height: 150px;
   }
 }
+
+.donate-category {
+  background-color: #f4f4f4;
+}
+
+.donate-title {
+  background-color: #fbfbfb;
+}
+
+/* @media (max-width: 767px) {
+  .donate-category,
+  .donate-title {
+    font-size: 0.75rem;
+  }
+} */
+
+@media (max-width: 767px) {
+  .donate-category,
+  .donate-title {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .donate-category,
+  .donate-title {
+    width: 50%;
+  }
+}
+
+.details {
+  background-color: var(--color-primary);
+  color: white;
+  width: 200px;
+}
+@media (max-width: 767px) {
+  iframe {
+    height: 100%;
+  }
+}
