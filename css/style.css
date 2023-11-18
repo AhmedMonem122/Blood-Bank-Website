@@ -290,3 +290,60 @@ form button.contact-btn:hover {
     height: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .baby img {
+    width: 200px;
+  }
+}
+
+.articles-disease {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.related-articles {
+  position: relative;
+  width: fit-content;
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.related-articles::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--color-secondary);
+  bottom: -76%;
+  left: 0;
+}
+
+.slider-item h3 {
+  color: var(--color-secondary);
+}
+
+.slider-item .heart {
+  background-color: var(--color-primary);
+  color: white;
+  top: 3%;
+  left: 3%;
+}
+
+.owl-carousel {
+  position: static;
+}
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: -3%;
+  left: 0;
+  font-size: 3rem;
+  margin-top: 0;
+}
