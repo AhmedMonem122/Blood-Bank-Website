@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Styles -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Donate Requests</title>
+  </head>
+  <body>
+    <header>
+      <div class="header py-1">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center languages"
+          >
+            <div class="active">عربي</div>
+            <div class="mx-1 bg-light lang-breaker"></div>
+            <div class="text-light">En</div>
+          </div>
+
+          <div>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+
+          <div>
+            <a
+              href="/register.html"
+              class="ms-2 ms-md-5 text-decoration-underline auth-link"
+              >إنشاء حساب جديد</a
+            >
+            <a href="/login.html" class="text-warning auth-link">الدخول</a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">عن بنك الدم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/articles.html">المقالات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/donate-requests.html"
+                  >طلبات التبرع</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="rounded px-3 px-xl-5">
+                  <a class="nav-link text-white" href="/donate-request.html"
+                    >طلب التبرع</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="my-5 border bg-white py-3 px-2">
+        <span class="opacity-75">الرئيسية /</span>
+        <span>طلبات التبرع</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="border-bottom mb-1">
+        <h3 class="donate-requests-header text-center mx-auto">طلبات التبرع</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="donate-requests-section py-3 px-2 border">
+        <form class="donate-requests-form">
+          <div
+            class="row align-items-center justify-content-center mx-auto gy-3"
+          >
+            <div class="col-md-5">
+              <div>
+                <select
+                  class="form-select rounded-pill"
+                  aria-label="Default select example"
+                >
+                  <option selected class="opacity-75">اختر فصيلة الدم</option>
+                  <option value="1">+B</option>
+                  <option value="2">+A</option>
+                  <option value="3">+AB</option>
+                  <option value="4">-O</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div>
+                <select
+                  class="form-select rounded-pill"
+                  aria-label="Default select example"
+                >
+                  <option selected class="opacity-75">اختر المدينة</option>
+                  <option value="1">القاهرة</option>
+                  <option value="2">الإسكندرية</option>
+                  <option value="3">المنصورة</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div>
+                <button type="submit" class="btn text-center mx-auto mx-md-0">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests my-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+B</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+A</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+AB</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">-O</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+B</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+A</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">+AB</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-2 pe-2 ps-3 donate-requests mb-3">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2">
+              <div class="blood-type rounded-circle mx-auto mx-md-0">-O</div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <div>اسم الحالة:</div>
+                  <div>مستشفى:</div>
+                  <div>المدينة:</div>
+                </div>
+                <div>
+                  <div class="me-3">أحمد محمد أحمد</div>
+                  <div class="me-3">القصر العيني</div>
+                  <div class="me-3">المنصورة</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="mx-auto mx-md-0 me-md-auto donate-requests-details text-center py-3"
+              >
+                التفاصيل
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#"><</a>
+            </li>
+            <li class="page-item me-1"><a class="page-link" href="#">6</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">5</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">4</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">3</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">2</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">1</a></li>
+            <li class="page-item me-1"><a class="page-link" href="#">></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <footer class="mt-5 py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div>
+              <div>
+                <img src="assets/images/logo.png" alt="logo" />
+              </div>
+              <h3>بنك الدم</h3>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مواد النص العربي حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التي يولدها
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div>
+              <div class="mb-3">
+                <a href="/index.html" class="active">الرئيسية</a>
+              </div>
+              <div class="mb-3">
+                <a href="#">عن بنك الدم</a>
+              </div>
+              <div class="mb-3">
+                <a href="/articles.html">المقالات</a>
+              </div>
+              <div class="mb-3">
+                <a href="/donate-requests.html">طلبات التبرع</a>
+              </div>
+              <div class="mb-3">
+                <a href="/about.html">من نحن</a>
+              </div>
+              <div>
+                <a href="/contact.html">اتصل بنا</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div>
+              <div class="mb-5">
+                <a href="#" class="active">متوفر على</a>
+              </div>
+
+              <div class="mb-3">
+                <img src="assets/images/google1.png" alt="google play" />
+              </div>
+              <div>
+                <img src="assets/images/ios1.png" alt="app store" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer py-3">
+      <div class="container">
+        <div class="d-flex">
+          <div>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="ms-1 ms-md-3"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <div class="d-flex mx-auto copyrights">
+            <p>جميع الحقوق محفوظة لـ</p>
+            <span class="footer-span">بنك الدم</span>
+            <p>&copy; 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
