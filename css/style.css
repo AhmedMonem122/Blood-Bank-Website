@@ -437,3 +437,125 @@ form.donate-requests-form button[type="submit"]:hover {
     --bs-pagination-font-size: 0.875rem;
   }
 }
+
+.carousel-item h1 {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  width: 300px;
+  line-height: 2;
+  color: var(--color-primary);
+}
+
+.carousel-item button,
+.home-articles button,
+.donate-requests-section button {
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 0;
+}
+
+.carousel-item button:hover,
+.home-articles button:hover,
+.donate-requests-section button:hover {
+  color: var(--color-primary);
+  background-color: white;
+  border: 1px solid var(--color-primary);
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 200px;
+  border-radius: 210px 210px 0 0;
+}
+
+.img-container {
+  width: 400px;
+  height: 200px;
+  border-radius: 210px 210px 0 0;
+}
+
+.header-section {
+  background-image: url(../assets/images/BG1.jpg);
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fbfbfb;
+}
+
+.carousel-indicators .active {
+  border: 1px solid var(--color-secondary);
+}
+
+.about-section {
+  background-color: #f4f4f4;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.about-section p {
+  text-align: center;
+}
+
+.about-section span {
+  color: var(--color-secondary);
+}
+
+@media (min-width: 1024px) {
+  .about-section p {
+    width: 800px;
+  }
+
+  .about-img-container {
+    width: 600px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.home-articles .owl-theme .owl-nav {
+  left: 10%;
+}
+
+.call-section {
+  background-image: url(../assets/images/call.jpg);
+}
+
+.call-us {
+  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.call-us-num {
+  background-color: var(--color-green);
+  color: white;
+}
+
+.call-us-div {
+  width: fit-content;
+}
+
+.whatsapp-img-container {
+  left: -10%;
+  top: -5%;
+  width: 60px;
+}
+
+.app-section {
+  background-image: url(../assets/images/BG-phone.png);
+}
+
+@media (max-width: 767px) {
+  .app-img-container img {
+    width: 300px;
+  }
+}
